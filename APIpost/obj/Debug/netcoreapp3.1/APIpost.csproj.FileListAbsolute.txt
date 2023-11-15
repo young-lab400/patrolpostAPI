@@ -1,0 +1,5 @@
+D:\Dev\APIpost\APIpost\APIpost\obj\Debug\netcoreapp3.1\APIpost.csproj.AssemblyReference.cache
+D:\Dev\APIpost\APIpost\APIpost\obj\Debug\netcoreapp3.1\APIpost.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\APIpost\APIpost\APIpost\obj\Debug\netcoreapp3.1\APIpost.AssemblyInfoInputs.cache
+D:\Dev\APIpost\APIpost\APIpost\obj\Debug\netcoreapp3.1\APIpost.AssemblyInfo.cs
+D:\Dev\APIpost\APIpost\APIpost\obj\Debug\netcoreapp3.1\APIpost.csproj.CoreCompileInputs.cache

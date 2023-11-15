@@ -1,0 +1,7 @@
+D:\Dev\APIpost\APIpost\APIpost\bin\Release\net6.0\publish\Program.cs
+D:\Dev\APIpost\APIpost\APIpost\bin\Release\net6.0\publish\APIpost.exe
+D:\Dev\APIpost\APIpost\APIpost\bin\Release\net6.0\publish\APIpost.dll
+D:\Dev\APIpost\APIpost\APIpost\bin\Release\net6.0\publish\APIpost.deps.json
+D:\Dev\APIpost\APIpost\APIpost\bin\Release\net6.0\publish\APIpost.runtimeconfig.json
+D:\Dev\APIpost\APIpost\APIpost\bin\Release\net6.0\publish\APIpost.pdb
+D:\Dev\APIpost\APIpost\APIpost\bin\Release\net6.0\publish\Newtonsoft.Json.dll
