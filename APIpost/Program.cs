@@ -20,8 +20,8 @@ static async Task ProcessRepositoriesAsync(HttpClient client)
 {
     try
     {
-        string webRootPath = System.Environment.CurrentDirectory;
-        ////string webRootPath = AppDomain.CurrentDomain.BaseDirectory;
+        ////string webRootPath = System.Environment.CurrentDirectory;
+        string webRootPath = AppDomain.CurrentDomain.BaseDirectory;
         StreamReader reader = new StreamReader(webRootPath + "/data.json");
         string apiData = reader.ReadToEnd();
         Json fooJSON = JsonConvert.DeserializeObject<Json>(apiData);
@@ -37,7 +37,7 @@ static async Task ProcessRepositoriesAsync(HttpClient client)
         {
             content.Add("depart", "AK");
         }
-        
+
         if (!string.IsNullOrEmpty(fooJSON.dt))
         {
             content.Add("dt", fooJSON.dt);
@@ -47,7 +47,7 @@ static async Task ProcessRepositoriesAsync(HttpClient client)
             content.Add("dt", DateTime.Now.ToString("yyyy-MM-dd"));
         }
 
-        if(!string.IsNullOrEmpty(fooJSON.num))
+        if (!string.IsNullOrEmpty(fooJSON.num))
         {
             content.Add("num", fooJSON.num);
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\APIpost\\patrolpostAPILine推\\APIpost\\APIpost.csproj": {}
+    "D:\\Dev\\APIpost\\patrolpostAPI\\APIpost\\APIpost.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\APIpost\\patrolpostAPILine推\\APIpost\\APIpost.csproj": {
+    "D:\\Dev\\APIpost\\patrolpostAPI\\APIpost\\APIpost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\APIpost\\patrolpostAPILine推\\APIpost\\APIpost.csproj",
+        "projectUniqueName": "D:\\Dev\\APIpost\\patrolpostAPI\\APIpost\\APIpost.csproj",
         "projectName": "APIpost",
-        "projectPath": "D:\\Dev\\APIpost\\patrolpostAPILine推\\APIpost\\APIpost.csproj",
+        "projectPath": "D:\\Dev\\APIpost\\patrolpostAPI\\APIpost\\APIpost.csproj",
         "packagesPath": "C:\\Users\\sp3060\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\APIpost\\patrolpostAPILine推\\APIpost\\obj\\",
+        "outputPath": "D:\\Dev\\APIpost\\patrolpostAPI\\APIpost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sp3060\\AppData\\Roaming\\NuGet\\NuGet.Config",

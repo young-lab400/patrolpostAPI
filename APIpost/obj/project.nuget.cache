@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3PZIjDWLNK1dyyd8zsh7fipdlbFVeDhWzypZORUVBirKtDBG8jaFR3/PW3lt0U7S7nKN2tTXVgEXgFftFg6hBA==",
+  "dgSpecHash": "bDS14amQwnNozAPZyUelcuH9htsAOHq+kFuqd6brsGjhGXGPYg3Rwq46pBertfCb+cHxqoL74jKgfVclufqXGg==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\APIpost\\patrolpostAPILine推\\APIpost\\APIpost.csproj",
+  "projectFilePath": "D:\\Dev\\APIpost\\patrolpostAPI\\APIpost\\APIpost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sp3060\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
