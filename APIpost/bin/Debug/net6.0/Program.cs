@@ -3,6 +3,7 @@ using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using APIpost;
 
 using HttpClient client = new();
 client.BaseAddress = new Uri("http://192.168.9.26/");
@@ -17,29 +18,45 @@ await ProcessRepositoriesAsync(client);
 
 static async Task ProcessRepositoriesAsync(HttpClient client)
 {
-    
     try
     {
-        //string webRootPath = System.Environment.CurrentDirectory;
-        //////string webRootPath = AppDomain.CurrentDomain.BaseDirectory;
-        //StreamReader reader = new StreamReader(webRootPath + "/data.json");
-        //var apiData = reader.ReadToEnd();
-        //var fooJSON = JsonConvert.DeserializeObject(apiData);
-        ////using (HttpContent fooContent = new StringContent(fooJSON, Encoding.UTF8, "application/json"))
-        ////{
-        ////    var result = await client.PostAsync("http://192.168.9.26/api/Get_patrolpoint", fooContent);
-        ////    Console.WriteLine(result);
-        ////}
+        string webRootPath = System.Environment.CurrentDirectory;
+        ////string webRootPath = AppDomain.CurrentDomain.BaseDirectory;
+        StreamReader reader = new StreamReader(webRootPath + "/data.json");
+        string apiData = reader.ReadToEnd();
+        Json fooJSON = JsonConvert.DeserializeObject<Json>(apiData);
 
         HttpClient httpClient = new HttpClient();
         httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
         var content = new Dictionary<string, string>();
-        content.Add("depart", "AK");
-        content.Add("dt", DateTime.Now.ToString("yyyy-MM-dd"));
-        content.Add("num", "3");
+        if (!string.IsNullOrEmpty(fooJSON.depart))
+        {
+            content.Add("depart", fooJSON.depart);
+        }
+        else
+        {
+            content.Add("depart", "AK");
+        }
+        
+        if (!string.IsNullOrEmpty(fooJSON.dt))
+        {
+            content.Add("dt", fooJSON.dt);
+        }
+        else
+        {
+            content.Add("dt", DateTime.Now.ToString("yyyy-MM-dd"));
+        }
+
+        if(!string.IsNullOrEmpty(fooJSON.num))
+        {
+            content.Add("num", fooJSON.num);
+        }
+        else
+        {
+            content.Add("num", "3");
+        }
         content.Add("opt", "4");
         var result = httpClient.PostAsync("http://192.168.9.26/api/Get_patrolpoint", new FormUrlEncodedContent(content));
-        
     }
     catch (Exception ex)
     {
